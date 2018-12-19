@@ -1,0 +1,6 @@
+	.blue {background: #00f;}
+	.white {background: #fff;}
+	td {
+		width: calc(100vmin/8);
+		height: calc(100vmin/8);
+		}
