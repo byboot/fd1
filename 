@@ -1,0 +1,65 @@
+[33mcommit 6cfeae57f8d791cc20fe5939097653a5be810787[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Павел Быль <byboot@gmail.com>
+Date:   Wed Dec 19 05:05:44 2018 +0000
+
+    Правки на курсах №1
+
+[33mcommit d34e1bdec1c9735ecefe6f0e6e583f3e14a96a09[m
+Author: Павел Быль <byboot@gmail.com>
+Date:   Wed Dec 19 05:00:29 2018 +0000
+
+    Домашнее задание
+
+[33mcommit d70bdf3c258cd551aa8179a5641520070b922560[m
+Merge: a3c1bbc c6574dc
+Author: byboot <45808952+byboot@users.noreply.github.com>
+Date:   Fri Dec 14 10:04:16 2018 +0300
+
+    Merge pull request #2 from byboot/two
+    
+    Two
+
+[33mcommit a3c1bbcee983142d948d542018bd828dfef2cd45[m
+Merge: 8b8ccde 19797c5
+Author: byboot <45808952+byboot@users.noreply.github.com>
+Date:   Fri Dec 14 10:00:12 2018 +0300
+
+    Merge pull request #1 from byboot/one
+    
+    комментарий
+
+[33mcommit c6574dc623ae108763c0e1a8208810577c041c6f[m[33m ([m[1;31morigin/two[m[33m, [m[1;32mtwo[m[33m)[m
+Author: Павел Быль <byboot@gmail.com>
+Date:   Fri Dec 14 06:25:12 2018 +0000
+
+    два новых файла
+
+[33mcommit 5f48808f4609cb41407f4b619f10d325583ad8cc[m
+Author: Павел Быль <byboot@gmail.com>
+Date:   Fri Dec 14 06:13:28 2018 +0000
+
+    создали файл
+
+[33mcommit 19797c5f773a2d2e868e2fe5b7c832481c6f1e35[m[33m ([m[1;31morigin/one[m[33m, [m[1;32mone[m[33m)[m
+Author: Павел Быль <byboot@gmail.com>
+Date:   Fri Dec 14 05:56:59 2018 +0000
+
+    комментарий
+
+[33mcommit 8b8ccdead3e41346258e24a14307b5ab4442e9de[m
+Author: Павел Быль <byboot@gmail.com>
+Date:   Wed Dec 12 07:34:24 2018 +0000
+
+    новый файл
+
+[33mcommit d05ebdb73012dfb631bbfa16efcd476872344600[m
+Author: Павел Быль <byboot@gmail.com>
+Date:   Wed Dec 12 07:32:16 2018 +0000
+
+    мы изменили файл
+
+[33mcommit 7ac3208afb798b947f2c8683af1abdeb980489d9[m[33m ([m[1;32m7ac320[m[33m)[m
+Author: Павел Быль <byboot@gmail.com>
+Date:   Wed Dec 12 07:20:08 2018 +0000
+
+    Наш первый commit 2
