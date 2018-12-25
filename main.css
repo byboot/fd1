@@ -1,6 +1,23 @@
-	.blue {background: #00f;}
-	.white {background: #fff;}
+	.blue 
+		{
+			background: #00f;
+			border-style: dashed;
+			border-width: 1px;
+			border-color: yellow;
+			
+		}
+	
+	.white 
+		{
+			background: #fff;
+			border-style: solid;
+			border-width: 2px;
+			border-color: red;
+			
+		}
+	
 	td {
 		width: calc(100vmin/8);
 		height: calc(100vmin/8);
+		border-radius: 50%;
 		}

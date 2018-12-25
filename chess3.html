@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<title>Шахматная доска - псевдоклассы</title>
+</head>
+
+<body>
+    
+	
+ <style type="text/css">
+        
+		div div div 
+	{
+		width:9vw;
+		height:9vw;  
+		display: table-cell;
+		border: 2px solid black;
+		text-align: center;
+		font-family: "Roboto";
+		vertical-align: middle;
+   }
+
+/*  делаем шахматку на все квадраты */
+div div:nth-child(even) div:nth-child(odd), div div:nth-child(odd) div:nth-child(even)
+{ background-color: #0000fe; }
+
+/*  отсекаем белым 4 стороны */			
+ div div div:first-child, div div:first-child div,  div div div:last-child,  div div:last-child div
+{
+height:2vw;
+color:gray;
+background-color: white !important;
+text-align: center;
+font-size: 2vw;
+border: 2px solid white;
+}
+
+/*  цифры - буквы */	
+div div:nth-child(9n+1) div:nth-child(2)::after {content: "a";}
+div div:nth-child(9n+1) div:nth-child(3)::after { content: "b";}
+div div:nth-child(9n+1) div:nth-child(4)::after {content: "c";}
+div div:nth-child(9n+1) div:nth-child(5)::after {content: "d";}
+div div:nth-child(9n+1) div:nth-child(6)::after {content: "e";}
+div div:nth-child(9n+1) div:nth-child(7)::after {content: "f";}
+div div:nth-child(9n+1) div:nth-child(8)::after {content: "g";}
+div div:nth-child(9n+1) div:nth-child(9)::after {content: "h";}
+div div:nth-child(2) div:nth-child(9n+1)::after {content: "1";}
+div div:nth-child(3) div:nth-child(9n+1)::after {content: "2";}
+div div:nth-child(4) div:nth-child(9n+1)::after {content: "3";}
+div div:nth-child(5) div:nth-child(9n+1)::after {content: "4";}
+div div:nth-child(6) div:nth-child(9n+1)::after {content: "5";}
+div div:nth-child(7) div:nth-child(9n+1)::after {content: "6";}
+div div:nth-child(8) div:nth-child(9n+1)::after {content: "7";}
+div div:nth-child(9) div:nth-child(9n+1)::after {content: "8";}
+
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+</html>
