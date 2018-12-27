@@ -42,7 +42,7 @@ border: 2px solid white;
 
 /*  цифры - буквы */	
 div div:nth-child(9n+1) div:nth-child(2)::after {content: "a";}
-div div:nth-child(9n+1) div:nth-child(3)::after { content: "b";}
+div div:nth-child(9n+1) div:nth-child(3)::after {content: "b";}
 div div:nth-child(9n+1) div:nth-child(4)::after {content: "c";}
 div div:nth-child(9n+1) div:nth-child(5)::after {content: "d";}
 div div:nth-child(9n+1) div:nth-child(6)::after {content: "e";}
@@ -58,8 +58,180 @@ div div:nth-child(7) div:nth-child(9n+1)::after {content: "6";}
 div div:nth-child(8) div:nth-child(9n+1)::after {content: "7";}
 div div:nth-child(9) div:nth-child(9n+1)::after {content: "8";}
 
+
+/*  шахматные фигуры черные */	
+
+div div:nth-child(2) div:nth-child(2)::after, div div:nth-child(2) div:nth-child(9)::after
+{
+    content: ""; display: block; 
+    overflow: hidden;
+    width: 9vw;
+    height: 9vw;
+    background-image: url("chess.png"); 
+    background-position: 277% 2%;
+    background-size: 650%; 
+}
+
+
+div div:nth-child(2) div:nth-child(3)::after, div div:nth-child(2) div:nth-child(8)::after
+{
+    content: ""; display: block; 
+    overflow: hidden;
+    width: 9vw;
+    height: 9vw;
+    background-image: url("chess.png"); 
+    background-position: 319% 2%;
+    background-size: 650%; 
+}
+
+
+div div:nth-child(2) div:nth-child(4)::after, div div:nth-child(2) div:nth-child(7)::after
+{
+    content: ""; display: block; 
+    overflow: hidden;
+    width: 9vw;
+    height: 9vw;
+    background-image: url("chess.png"); 
+    background-position: 416% 0%;
+    background-size: 650%; 
+}
+
+div div:nth-child(2) div:nth-child(5)::after
+{
+    content: ""; display: block; 
+    overflow: hidden;
+    width: 9vw;
+    height: 9vw;
+    background-image: url("chess.png"); 
+    background-position: -1% -2%;
+    background-size: 673%;
+    background-repeat: no-repeat;
+}
+
+
+div div:nth-child(2) div:nth-child(6)::after
+{
+
+    content: ""; display: block; 
+    overflow: hidden;
+    width: 9vw;
+    height: 9vw;
+    background-image: url("chess.png"); 
+    background-position: 374% 0%;
+    background-size: 650%; 
+}
+
+/* черные пешки */
+
+div div:nth-child(3) div:nth-child(-n+9):nth-child(n+2)::after
+{
+    content: ""; display: block; 
+    overflow: hidden;
+    width: 9vw;
+    height: 9vw;
+    background-image: url("chess.png"); 
+    background-position: 103% 3%;
+    background-size: 673%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/*  белые фигуры - низ  */
+
+
+/* король */
+div div:nth-child(9) div:nth-child(6)::after
+{
+
+    content: ""; display: block; 
+    overflow: hidden;
+    width: 9vw;
+    height: 9vw;
+    background-image: url("chess.png"); 
+    background-position: 374% 100%;
+    background-size: 650%; 
+}
+
+
+/* ферзь */
+div div:nth-child(9) div:nth-child(5)::after
+{
+
+    content: ""; display: block; 
+    overflow: hidden;
+    width: 9vw;
+    height: 9vw;
+    background-image: url("chess.png"); 
+    background-position: -1% 100%;
+    background-size: 650%; 
+    background-repeat: no-repeat;
+}
+
+
+/* ладья */
+
+div div:nth-child(9) div:nth-child(2)::after, div div:nth-child(9) div:nth-child(9)::after
+{
+    content: ""; display: block; 
+    overflow: hidden;
+    width: 9vw;
+    height: 9vw;
+    background-image: url("chess.png"); 
+    background-position: 277% 103%;
+    background-size: 650%; 
+}
+
+
+/* лошадь */
+
+div div:nth-child(9) div:nth-child(3)::after, div div:nth-child(9) div:nth-child(8)::after
+{
+    content: ""; display: block; 
+    overflow: hidden;
+    width: 9vw;
+    height: 9vw;
+    background-image: url("chess.png"); 
+    background-position: 201% 103%;
+    background-size: 650%; 
+}
+
+
+/* слон */
+
+div div:nth-child(9) div:nth-child(4)::after, div div:nth-child(9) div:nth-child(7)::after
+{
+    content: ""; display: block; 
+    overflow: hidden;
+    width: 9vw;
+    height: 9vw;
+    background-image: url("chess.png"); 
+    background-position: 180% 100%;
+    background-size: 650%; 
+}
+
+
+/* белые пешки */
+
+div div:nth-child(8) div:nth-child(-n+9):nth-child(n+2)::after
+{
+    content: ""; display: block; 
+    overflow: hidden;
+    width: 9vw;
+    height: 9vw;
+    background-image: url("chess.png"); 
+    background-position: 103% 102%;
+    background-size: 673%;
+    background-repeat: no-repeat;
+}
+
+
+
+
     </style>
 </head>
+
 
 <body>
 
