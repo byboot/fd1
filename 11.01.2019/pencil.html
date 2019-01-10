@@ -1,0 +1,60 @@
+<!doctype <!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>Карандаш - градиент</title>
+
+    <style type="text/css">
+        .body {
+            position: relative;
+        }
+
+        .body div {
+            position: absolute;
+        }
+
+        .wood {
+            background: linear-gradient(to bottom, #dadc33 18px, #f6f040 18px, #f6f040 40px, #dadc33 0px);
+
+            width: 75vw;
+            height: 60px;
+
+        }
+
+        .griph-cover {
+            border: 30px solid transparent;
+            border-left: 80px solid #fe001a;
+
+            left: 75vw;
+            height: 0;
+            width: 0;
+        }
+
+        .griph {
+            border: 4px solid transparent;
+            border-left: 13px solid #000;
+
+            top: -4px;
+            left: -11px;
+            height: 0;
+            width: 0;
+
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="body">
+        <div class="wood"></div>
+        <div class="griph-cover">
+            <div class="griph"></div>
+        </div>
+    </div>
+</body>
+
+</html>

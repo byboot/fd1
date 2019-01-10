@@ -2,34 +2,310 @@
 <html>
 
 <head>
-<meta charset="utf-8">
-
-<title>тестовое занятие "Треугольник"</title>
+    <meta charset="utf-8" />
+    <title>Шахматы</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        div div {
+            width: 8vmin;
+            height: 8vmin;
+            border: 1px solid black;
+            position: absolute;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 8vmin;
+            font-size: 5vmin;
+        }
+        div div:nth-child(-10n+12),
+        div div:nth-child(-8n+97):nth-child(8n+41) {
+            left: 8vmin;
+        }
+        div div:nth-child(-10n+13),
+        div div:nth-child(-8n+98):nth-child(8n+42) {
+            left: 16vmin;
+        }
+        div div:nth-child(-10n+14),
+        div div:nth-child(-8n+99):nth-child(8n+43) {
+            left: 24vmin;
+        }
+        div div:nth-child(-10n+15),
+        div div:nth-child(-8n+100):nth-child(8n+44) {
+            left: 32vmin;
+        }
+        div div:nth-child(-10n+16),
+        div div:nth-child(-8n+93):nth-child(8n+45) {
+            left: 40vmin;
+        }
+        div div:nth-child(-10n+17),
+        div div:nth-child(-8n+94):nth-child(8n+46) {
+            left: 48vmin;
+        }
+        div div:nth-child(-10n+18),
+        div div:nth-child(-8n+95):nth-child(8n+47) {
+            left: 56vmin;
+        }
+        div div:nth-child(-10n+19),
+        div div:nth-child(-8n+96):nth-child(8n+48) {
+            left: 64vmin;
+        }
+        div div:nth-child(-10n+20),
+        div div:nth-child(-n+39):nth-child(n+32) {
+            left: 72vmin;
+        }
+        div div:nth-child(-n+20):nth-child(n+11) {
+            top: 72vmin;
+        }
+        div div:nth-child(-n+48):nth-child(n+41),
+        div div:nth-child(22),
+        div div:nth-child(32) {
+            top: 8vmin;
+        }
+        div div:nth-child(-n+56):nth-child(n+49),
+        div div:nth-child(23),
+        div div:nth-child(33) {
+            top: 16vmin;
+        }
+        div div:nth-child(-n+64):nth-child(n+57),
+        div div:nth-child(24),
+        div div:nth-child(34) {
+            top: 24vmin;
+        }
+        div div:nth-child(-n+72):nth-child(n+65),
+        div div:nth-child(25),
+        div div:nth-child(35) {
+            top: 32vmin;
+        }
+        div div:nth-child(-n+80):nth-child(n+73),
+        div div:nth-child(26),
+        div div:nth-child(36) {
+            top: 40vmin;
+        }
+        div div:nth-child(-n+88):nth-child(n+81),
+        div div:nth-child(27),
+        div div:nth-child(37) {
+            top: 48vmin;
+        }
+        div div:nth-child(-n+96):nth-child(n+89),
+        div div:nth-child(28),
+        div div:nth-child(38) {
+            top: 56vmin;
+        }
+        div div:nth-child(-n+100):nth-child(n+97),
+        div div:nth-child(29),
+        div div:nth-child(39) {
+            top: 64vmin;
+        }
+        div div:nth-child(21) {
+            top: 64vmin;
+            left: 40vmin;
+        }
+        div div:nth-child(30) {
+            top: 64vmin;
+            left: 48vmin;
+        }
+        div div:nth-child(31) {
+            top: 64vmin;
+            left: 56vmin;
+        }
+        div div:nth-child(40) {
+            top: 64vmin;
+            left: 64vmin;
+        }
+        /* a1-div[41]...d8-div[100], e8-div[21] f8-div[30] g8-div[31] h8-div[40] */
+        div div:nth-child(-n+56):nth-child(n+41),
+        div div:nth-child(-n+100):nth-child(n+89),
+        div div:nth-child(21),
+        div div:nth-child(30),
+        div div:nth-child(31),
+        div div:nth-child(40) {
+            background-image: url(chess.png);
+            background-repeat: no-repeat;
+            background-size: 550%;
+        }
+        div div:nth-child(-n+56):nth-child(n+49) {
+            background-position: 105% -5%;
+        }
+        /* Черные пешки */
+        div div:nth-child(41),
+        div div:nth-child(48) {
+            background-position: 40% -10%;
+        }
+        /* Черные ладьи */
+        div div:nth-child(42),
+        div div:nth-child(47) {
+            background-position: 84% -10%;
+        }
+        /* Черные кони */
+        div div:nth-child(43),
+        div div:nth-child(46) {
+            background-position: 61.6% -10%;
+        }
+        /* Черные слоны */
+        div div:nth-child(44) {
+            background-position: 18.8% -10%;
+        }
+        /* Черный ферзь */
+        div div:nth-child(45) {
+            background-position: -3% -10%;
+        }
+        /* Черный король */
+        div div:nth-child(-n+96):nth-child(n+89) {
+            background-position: 105% 116%;
+        }
+        /* Белые пешки */
+        div div:nth-child(97),
+        div div:nth-child(40) {
+            background-position: 41% 111%;
+        }
+        /* Белые ладьи */
+        div div:nth-child(98),
+        div div:nth-child(31) {
+            background-position: 84% 111%;
+        }
+        /* Белые кони */
+        div div:nth-child(99),
+        div div:nth-child(30) {
+            background-position: 61.6% 111%;
+        }
+        /* Белые слоны */
+        div div:nth-child(100) {
+            background-position: 18.8% 111%;
+        }
+        /* Белый ферзь */
+        div div:nth-child(21) {
+            background-position: -3% 111%;
+        }
+        /* Белый король */
+        div div:nth-child(-2n+48):nth-child(2n+42),
+        div div:nth-child(-2n+55):nth-child(2n+49),
+        div div:nth-child(-2n+64):nth-child(2n+58),
+        div div:nth-child(-2n+71):nth-child(2n+65),
+        div div:nth-child(-2n+80):nth-child(2n+74),
+        div div:nth-child(-2n+87):nth-child(2n+81),
+        div div:nth-child(-2n+96):nth-child(2n+90),
+        div div:nth-child(97),
+        div div:nth-child(99),
+        div div:nth-child(21),
+        div div:nth-child(31) {
+            background-color: blue;
+        }
+    </style>
 </head>
 
 <body>
+    <div>
+        <div></div>
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+        <div>d</div>
+        <div>e</div>
+        <div>f</div>
+        <div>g</div>
+        <div>h</div>
+        <div></div>
+        <div></div>
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+        <div>d</div>
+        <div>e</div>
+        <div>f</div>
+        <div>g</div>
+        <div>h</div>
+        <div></div>
 
-<style type="text/css">
-	
- div 
-	{
-	  width:0; height:0;
-	  border-style: solid;
-	  border-width:40px;
-	  border-top-color: red;
-	  border-bottom-color: black;
-	  border-left-color: green;
-	  border-right-color: blue;
-	}
-	
-</style>
-    
-   
-   
-   <div></div>
-   
+        <div></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div></div>
 
-    
+        <div></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </div>
 </body>
 
 </html>

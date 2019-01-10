@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8" />
+ <title>Самостоятельная работа</title>
+ <!-- исправить все возможные ошибки -->
+ 
+ <style type="text/css">
+ 
+  body {
+   background-color: blue;
+   text-indent: 1.5em;
+   text-align: center;
+   font-weight: normal;
+   color: green;
+
+
+  }
+
+  /*
+ заголовок h1 в контейнере body должен отобразиться наклонным (не рукописным) моноширинным шрифтом
+ размером 24 пикселя
+ все буквы должны быть заглавными
+ */
+
+  .body {
+   font-style: oblique;
+   text-transform: uppercase;
+   font-family: monospace;
+
+  }
+
+
+  /*
+ написать стиль и селектор
+ элемент с id="quest1" должен иметь сплошную рамку 2 пикселя зеленого цвета
+ */
+
+  .quest1 #quest1 {
+   border: solid 2px green;
+  }
+
+
+
+  /*
+ написать селектор класса и стиль
+ чтобы повторить поведение тега <b></b>
+ */
+
+  b {
+   font-weight: bold;
+  }
+
+
+  /*
+ написать селектор класса и стиль
+ чтобы повторить поведение тега <em></em>
+ */
+
+  em {
+   font-style: italic;
+  }
+
+
+  /*
+ написать селектор класса и стиль
+ чтобы повторить поведение тега <s></s>
+ */
+
+  s {
+   text-decoration: line-through;
+  }
+
+  /*
+ исправить, чтобы было корректно
+ */
+
+  p #myParagraph {
+   border-style: solid;
+   border: 5px;
+   border-color: #FF6600;
+  }
+
+  /*
+ описать селектор для первого на странице div и стили, размером 200x200px без бордюра, залитого красным цветом
+ */
+
+  div:first-child {
+   width: 200px;
+   height: 200px;
+   border-style: none;
+   background-color: red;
+  }
+
+
+  /*
+ описать селектор чтобы каждый седьмой абзац на странице был обведен серой рамкой в один пиксель
+ */
+
+  p:nth-of-type(7n) {
+   border: solid 1px gray;
+  }
+
+  /*
+ задать div с классом bg-one фоновое изображение, https://data.pixiz.com/output/user/frame/preview/400x400/2/3/4/0/1230432_eb0ab.jpg
+ изображение должно повторяться только по горизонтали
+ */
+
+  .bg-one {
+   background-image: url(https://data.pixiz.com/output/user/frame/preview/400x400/2/3/4/0/1230432_eb0ab.jpg);
+   background-repeat: repeat-x;
+  }
+
+
+  /*
+ перед каждой ссылкой добавить иконку https://findicons.com/files/icons/2779/simple_icons/64/foursquare_64_black.png
+ */
+
+  a::before {
+   background-image: url(https://findicons.com/files/icons/2779/simple_icons/64/foursquare_64_black.png);
+  }
+
+
+  /*
+ после каждой ссылки, открывающейся в новом окне, добавить строку "В новом окне"
+ курсор у таких ссылок должен быть crosshair
+ */
+
+  a[target=_blank]::after {
+   content: "В новом окне";
+   cursor: crosshair;
+  }
+
+
+  /*
+ сделать каждый второй элемент всех списков ul красного цвета
+ */
+
+  ul:nth-child(2n) {
+   color: red;
+  }
+
+  /*
+ последние 10 span на странице сделать блочными
+ задать ширину 10vw, высоту 20 пикселей
+ */
+
+  span:nth-last-child(10) {
+   width: 10vw;
+   height: 20px;
+   display: block;
+  }
+
+
+  /*
+ спрятать все br на странице
+ */
+
+  br {
+   display: none;
+  }
+
+  /*
+ нарисовать равнобедренный треугольник высотой 150 пикселей
+ */
+
+  .triangle {
+   border-width: 150px;
+   width: 0px;
+   height: 0px;
+   border-style: solid;
+   border-top-color: transparent;
+   border-left-color: transparent;
+   border-right-color: transparent;
+   border-color: red;
+   background: red;
+  }
+
+
+  /*
+ нарисовать прямоугольный треугольник высотой 150 пикселей
+ */
+
+  .triangle2 {
+   width: 0;
+   height: 0;
+   border-left: 50px solid transparent;
+   border-right: 50px solid transparent;
+   border-bottom: 100px solid red;
+  }
+ </style>
+</head>
+
+<body>
+
+
+
+
+
+</body>
+
+</html>
