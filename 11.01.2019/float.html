@@ -1,0 +1,84 @@
+<!doctype <!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>Карандаш - градиент</title>
+
+    <style type="text/css">
+        .chess {
+            border: 1px solid #202330;
+            float: left;
+            width: calc(100vw / 8 - 4px);
+            height: calc(100vw / 8 - 4px);
+        }
+
+        div:nth-of-type(odd) {
+            background: red;
+        }
+
+
+
+
+
+        ul {
+            border-radius: 50%;
+        }
+
+        li {
+            float: left;
+            list-style-type: none;
+            font-size: 23px;
+            padding: 1vh;
+            background: linear-gradient(to bottom, grey, cyan);
+
+
+        }
+
+        li:not(:first-child):before {
+            content: "|";
+            margin-right: 1vw;
+        }
+    </style>
+
+
+</head>
+
+
+
+<body>
+
+    <div>
+
+        <div class="chess"></div>
+        <div class="chess"></div>
+        <div class="chess"></div>
+        <div class="chess"></div>
+        <div class="chess"></div>
+        <div class="chess"></div>
+        <div class="chess"></div>
+        <div class="chess"></div>
+
+
+    </div>
+
+    <br>
+    <hr><br>
+
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">О компании</a></li>
+        </ul>
+    </nav>
+
+
+
+</body>
+
+</html>
