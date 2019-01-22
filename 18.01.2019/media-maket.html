@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Макет</title>
+    <style>
+        @media screen and (max-width:640px) {
+        
+            body {
+                margin: 0;
+            }
+        
+            #page {
+                width: 100vw;
+                margin: 0;
+            }
+        
+            header div {
+                background-color: #C1C1C1;
+                outline: 1px solid black;
+                height: 16vw;
+                margin-bottom: 2.3vw;
+            }
+        
+            .main {
+                background-color: #EEE;
+        
+            }
+        
+            .div4 {
+                position: absolute;
+                top: 330vw;
+                width: 100%;
+                height: 57vw;
+                background-color: #FFF;
+                outline: 1px solid black;
+            }
+            
+            .div4 ul {
+                margin: 0;
+                line-height: 1.5em;
+                padding-top: 2vw;
+                padding-left: 2vw;
+                list-style-type: none;
+            }
+            
+            .div4 ul li {
+                float: left;
+                margin-right:  2vw;
+            }
+        
+            .div5 {
+                height: 53vw;
+                background-color: #DCDCDC;
+                background-color: #C1C1C1;
+                outline: 1px solid black;
+                margin-bottom: 2.3vw;
+            }
+        
+            .div6 {
+                background-color: #EEE;
+            }
+        
+            .div6 ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+        
+            .div6 ul li {
+                display: inline-block;
+                margin: 4.5vw;
+                margin-bottom: 1vw;
+                width: 40vw;
+                height: 40vw;
+                background-color: #FFF;
+                border: 0.15vw solid black;
+                border-radius: 50%;
+            }
+        
+            .div8 {
+                width: 100%;
+                background-color: #EEE;
+            }
+        
+            .div8 div {
+                width: 100%;
+                background-color: #FFF;
+                outline: 1px solid black;
+                margin-bottom: 2vw;
+            }
+        
+            .div8_1 {
+                height: 30vw;
+            }
+        
+            .div8_2 {
+                height: 18vw;
+            }
+            .div12 {
+                position: absolute;
+                top: 391vw;
+                width: 100%;
+                background-color: #EEE;
+            }
+        
+            .div12 div {
+                display: inline-block;
+                width: 48%;
+                height: 10vw;
+                margin-left: 0.6vw;
+                outline: 1px solid black;
+                background-color: #FFF;
+            }
+            .div2,
+            .div7,
+            .div10,
+            .div11 {
+                display: none;
+            }
+        
+            hr {
+                display: none;
+            }
+        
+        }
+        
+        @media screen and (min-width:641px) and (max-width:1024px) {
+            body {
+                margin: 0;
+            }
+        
+            #page {
+                width: 100vw;
+                margin: 0;
+            }
+        
+            header {
+                height: 22vw;
+                margin-bottom: 1vw;
+            }
+        
+            header div {
+                display: inline-block;
+                margin-right: 1vw;
+                background-color: #C1C1C1;
+                outline: 1px solid black;
+                height: 100%;
+            }
+        
+            .div1 {
+                width: 32vw;
+            }
+        
+            .div3 {
+                width: 67vw;
+                margin-right: 0;
+            }
+        
+            .main {
+                margin-bottom: 2vw;
+                height: 123vw;
+            }
+        
+            .div4 {
+                height: 20vw;
+                background-color: #C1C1C1;
+                outline: 1px solid black;
+            }
+            
+            .div4 ul {
+                margin: 0;
+                line-height: 1.5em;
+                padding-top: 1.6666666vw;
+                padding-left: 1.6666666vw;
+                list-style-type: none;
+            }
+            
+            .div4 ul li {
+                float: left;
+                margin-right:  2vw;
+            }
+        
+            .div7 {
+                position: absolute;
+                top: 122vw;
+                width: 100%;
+                height: 25vw;
+                outline: 1px solid black;
+            }
+        
+            .div6 ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+        
+            .div6 ul li {
+                display: inline-block;
+                margin: 1vw;
+                width: 31vw;
+                height: 24vw;
+                outline: 1px solid black;
+            }
+        
+            .div8 {
+                position: absolute;
+                top: 148.5vw;
+                width: 100%;
+            }
+        
+            .div8 div {
+                height: 20vw;
+                background-color: #C1C1C1;
+                outline: 1px solid black;
+                margin: 1vw 0;
+            }
+        
+            hr {
+                width: 90%;
+                height: 2px;
+                background-color: black;
+            }
+        
+            footer {
+                position: absolute;
+                top: 190.5vw;
+                width: 100%;
+            }
+        
+            footer>div {
+                margin: 1vw 0;
+                width: 100%;
+                height: 20vw;
+                background-color: #C1C1C1;
+                outline: 1px solid black;
+            }
+        
+            .div2,
+            .div5,
+            .div12 {
+                display: none;
+            }
+        
+            hr:nth-of-type(1) {
+                display: none;
+            }
+        }
+        
+        @media screen and (min-width: 1025px) and (max-width: 1200px) {
+            body {
+                margin: 0;
+                background-color: #282828;
+            }
+            #page {
+                /*max-width: 960px;*/
+                width: 80vw;
+                /*960px/1200px*/
+                height: 95.8333333vw;
+                /*1150px/1200px*/
+                background-color: #FFF;
+                margin: 0 auto;
+                padding: 2.08333333vw 5.83333333vw;
+                /*25px/1200px 70px/1200px*/
+            }
+            header {
+                height: 8.916666666vw;
+                /*107px/1200px*/
+                margin-bottom: 1.58333333vw;
+                /*19px/1200px*/
+            }
+            header div {
+                display: inline-block;
+                margin-right: 1.83333333vw;
+                /*22px/1200px*/
+                background-color: #787878;
+                height: 100%;
+            }
+            .div1 {
+                width: 10.166666vw;
+                /*122px/1200px*/
+            }
+            .div2 {
+                width: 23.25vw;
+                /*279px/1200px*/
+            }
+            .div3 {
+                width: 42.9166666vw;
+                /*515px/1200px*/
+                margin-right: 0;
+            }
+            .main {
+                margin-top: 1.916666vw;
+                /*23px/1200px*/
+                margin-bottom: 2.0833333vw;
+                /*25px/1200px*/
+                height: 64.083333vw;
+                /*769px/1200px*/
+            }
+            .main>div {
+                display: inline-block;
+                height: 100%;
+            }
+            .aside {
+                width: 15.41666666vw;
+                /*185px/1200px*/
+                margin-right: 1.75vw;
+                /*21px/1200px*/
+                vertical-align: top;
+            }
+            .div4 {
+                height: 27.916666vw;
+                /*335px/1200px*/
+                background-color: #787878;
+                margin-bottom: 25.166666vw;
+                /*302px/1200px*/
+            }
+            
+            .div4 ul {
+                margin: 0;
+                line-height: 1.5em;
+                padding-top: 1.6666666vw;
+                padding-left: 1.6666666vw;
+                list-style-type: none;
+                color: white;
+            }
+            .div7 {
+                height: 11vw;
+                /*132px/1200px*/
+                background-color: #787878;
+            }
+            .main_content {
+                width: 62.833333vw;
+                /*754px/1200px*/
+            }
+            .main_content>div {
+                margin-bottom: 1.666666vw;
+                /*20px/1200px*/
+            }
+            .div5 {
+                height: 17.5833333vw;
+                /*211px/1200px*/
+                background-color: #DCDCDC;
+                padding-left: 0.833333vw;
+                /*10px/1200px*/
+            }
+            .div6 {
+                height: 26.916666vw;
+                /*323px/1200px*/
+            }
+            .div6 ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .div6 ul li {
+                display: inline-block;
+                margin-right: 1.75vw;
+                /*21px/1200px*/
+                margin-bottom: 1.4166666vw;
+                /*17px/1200px*/
+                width: 11.166666vw;
+                /*134px/1200px*/
+                height: 12.583333vw;
+                /*151px/1200px*/
+                background-color: #DCDCDC;
+            }
+            .div6 ul li:nth-child(5) {
+                margin-right: 0;
+            }
+            .div8 {
+                height: 16.25vw;
+                /*195px/1200px*/
+            }
+            .div8 div {
+                display: inline-block;
+                background-color: #DCDCDC;
+                height: 100%;
+            }
+            .div8_1 {
+                width: 30.5833333vw;
+                /*367px/1200px*/
+                margin-right: 1.4166666vw;
+                /*17px/1200px*/
+            }
+            .div8_2 {
+                width: 30.833333vw;
+                /*370px/1200px*/
+            }
+            footer {
+                margin-top: 1.9166666vw;
+                /*23px/1200px*/
+                height: 15vw;
+                /*180px/1200px*/
+            }
+            footer>div {
+                display: inline-block;
+                margin-right: 1.833333vw;
+                /*22px/1200px*/
+                height: 100%;
+            }
+            .div10 {
+                width: 24.833333vw;
+                /*298px/1200px*/
+                background-color: #787878;
+            }
+            .div11 {
+                width: 24.833333vw;
+                /*298px/1200px*/
+                background-color: #787878;
+            }
+            .div12 {
+                width: 26.666666vw;
+                /*320px/1200px*/
+                margin-right: 0;
+            }
+            .div12 div {
+                height: 6.333333vw;
+                /*76px/1200px*/
+                background-color: #787878;
+            }
+            .div12_1 {
+                margin-bottom: 2.333333vw;
+                /*28px/1200px*/
+            }
+        }
+        @media screen and (min-width:1200px) {
+            body {
+                margin: 0;
+                background-color: #282828;
+            }
+            #page {
+                width: 960px;
+                height: 1150px;
+                background-color: #FFF;
+                margin: 0 auto;
+                padding: 25px 70px;
+            }
+            header {
+                height: 107px;
+                margin-bottom: 19px;
+            }
+            header div {
+                display: inline-block;
+                margin-right: 22px;
+                background-color: #787878;
+                height: 100%;
+            }
+            .div1 {
+                width: 122px;
+            }
+            .div2 {
+                width: 279px;
+            }
+            .div3 {
+                width: 515px;
+                margin-right: 0;
+            }
+            .main {
+                margin-top: 23px;
+                margin-bottom: 25px;
+                height: 769px;
+            }
+            .main>div {
+                display: inline-block;
+                height: 100%;
+            }
+            .aside {
+                width: 185px;
+                margin-right: 21px;
+                vertical-align: top;
+            }
+            .div4 {
+                height: 335px;
+                background-color: #787878;
+                margin-bottom: 302px;
+                color: white;
+            }
+            
+            .div4 ul {
+                margin: 0;
+                line-height: 1.5em;
+                padding-top: 20px;
+                padding-left: 20px;
+                list-style-type: none;
+            }
+            .div7 {
+                height: 132px;
+                background-color: #787878;
+            }
+            .main_content {
+                width: 754px;
+            }
+            .main_content>div {
+                margin-bottom: 20px;
+            }
+            .div5 {
+                height: 211px;
+                background-color: #DCDCDC;
+                padding-left: 10px;
+            }
+            .div6 {
+                height: 323px;
+            }
+            .div6 ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .div6 ul li {
+                display: inline-block;
+                margin-right: 21px;
+                margin-bottom: 17px;
+                width: 134px;
+                height: 151px;
+                background-color: #DCDCDC;
+            }
+            .div6 ul li:nth-child(5) {
+                margin-right: 0;
+            }
+            .div8 {
+                height: 195px;
+            }
+            .div8 div {
+                display: inline-block;
+                background-color: #DCDCDC;
+                height: 100%;
+            }
+            .div8_1 {
+                width: 367px;
+                margin-right: 17px;
+            }
+            .div8_2 {
+                width: 370px;
+            }
+            footer {
+                margin-top: 23px;
+                height: 180px;
+            }
+            footer>div {
+                display: inline-block;
+                margin-right: 22px;
+                height: 100%;
+            }
+            .div10 {
+                width: 298px;
+                background-color: #787878;
+            }
+            .div11 {
+                width: 298px;
+                background-color: #787878;
+            }
+            .div12 {
+                width: 320px;
+                margin-right: 0;
+            }
+            .div12 div {
+                height: 76px;
+                background-color: #787878;
+            }
+            .div12_1 {
+                margin-bottom: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+     <header>
+         <div class="div1"></div><!--
+         --><div class="div2"></div><!--
+         --><div class="div3"></div>
+     </header>
+     <hr>
+     <div class="main">
+         <div class="aside">
+             <div class="div4">
+                 <ul>
+                     <li>Редизайн сайтов</li>
+                     <li>Интернет-магазины</li>
+                     <li>Создание логотипов</li>
+                 </ul>
+             </div>
+             <div class="div7"></div>
+         </div><!--
+         --><div class="main_content">
+             <div class="div5"></div>
+             <div class="div6">
+                 <ul>
+                     <li></li><!--
+                     --><li></li><!--
+                     --><li></li><!--
+                     --><li></li><!--
+                     --><li></li><!--
+                     --><li></li><!--
+                     --><li></li>
+                 </ul>
+             </div>
+             <div class="div8">
+                 <div class="div8_1"></div><!--
+                 --><div class="div8_2"></div>
+             </div>
+            </div>
+     </div>
+     <hr>
+     <footer>
+         <div class="div10"></div><!--
+         --><div class="div11"></div><!--
+         --><div class="div12">
+             <div class="div12_1"></div>
+             <div class="div12_2"></div>
+         </div>
+     </footer>
+     </div>
+</body>
+
+</html> 

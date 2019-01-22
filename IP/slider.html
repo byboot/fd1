@@ -1,0 +1,193 @@
+<!doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Слайдер</title>
+
+
+    <style type="text/css">
+    
+    
+        /*скрываем все поле input*/
+
+        .slider>input {
+            display: none;
+        }
+
+
+        /*основные параметры слайдера*/
+
+        .slider {
+            width: 400px;
+            height: 250px;
+            border: 2px solid #27509e;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        /*делаем кнопки - bullet */
+
+        .slider>input+label {
+            position: relative;
+            float: left;
+            cursor: pointer;
+
+            width: 10px;
+            height: 10px;
+            top: 90%;
+            left: 42%;
+            margin-right: 7px;
+
+            border-radius: 8px;
+            background-color: #1a65ae;
+            border: 3px solid #e0dbc5;
+
+            z-index: 100;
+        }
+
+
+        /*кнопки при наведении*/
+
+        .slider>input+label:hover {
+            background: #282a3b;
+        }
+
+        /*нажатые кнопки*/
+
+        .slider>input:checked+label {
+            background: #e41d23;
+        }
+
+
+        /*стрелки */
+
+        .slider>input:checked+label+label,
+        .slider>input:checked+label+label+label {
+            display: block;
+            width: 50px;
+            height: 50px;
+
+            opacity: 0.3;
+            transition: opacity 0.9s ease-out 0s;
+            cursor: pointer;
+
+            position: absolute;
+            top: 40%;
+            z-index: 100;
+        }
+
+
+        /*выводим картинки стрелок*/
+
+        .slider>input:checked+label+label {
+            left: 0px;
+            background: url('https://colors.by/fd1/prev.png')
+        }
+
+        .slider>input:checked+label+label+label {
+            right: 0px;
+            background: url('https://colors.by/fd1/next.png')
+        }
+
+
+
+        /*основные настройки внутри слайдера*/
+
+        .slider>div {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            z-index: 0;
+            width: 1216px;
+
+            /*эффект анимации подсмотрел тут: https://habr.com/ru/post/220715/*/
+            transition: 1800ms cubic-bezier(0, 0, 0.275, 1.6) 0.1s;
+        }
+
+
+        /*прокрутка*/
+
+        .slider>input:nth-of-type(2):checked~div {
+            left: -100%;
+        }
+
+        .slider>input:nth-of-type(3):checked~div {
+            left: -200%;
+        }
+
+
+        /*параметры отображения блока тест+фото*/
+
+        .slider>div>div {
+            display: inline-block;
+            position: relative;
+            text-align: center;
+        }
+
+        /*возможность отображения текста на слайдах*/
+
+        .slider>div>div>p {
+            position: absolute;
+            top: 70%;
+            left: 0%;
+            right: 0px;
+            color: #31b393;
+            opacity: 0.5;
+            font-size: 20px;
+            background-color: #502542;
+            padding: 0 5px;
+            font-family: "Arial";
+            text-shadow: 2px 2px 6px #0f2e3b;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class='slider'>
+        <input type="radio" name="slide" id="slide1" checked>
+        <label for="slide1"></label>
+        <label for="slide3" style="visibility: hidden;"></label>
+        <label for="slide2"></label>
+
+        <input type="radio" name="slide" id="slide2">
+        <label for="slide2"></label>
+        <label for="slide1"></label>
+        <label for="slide3"></label>
+
+        <input type="radio" name="slide" id="slide3">
+        <label for="slide3"></label>
+        <label for="slide2"></label>
+        <label for="slide1" style="visibility: hidden;"></label>
+
+
+
+        <div>
+
+            <div>
+                <p>CSS - первый слайд</p>
+                <img src="https://colors.by/fd1/slide1.jpg" alt='это html'>
+            </div>
+
+            <div>
+                <p>CSS - второй слайд</p>
+                <img src="https://colors.by/fd1/slide2.jpg" alt='это html'>
+            </div>
+
+            <div>
+                <p>CSS - третий слайд</p>
+                <img src="https://colors.by/fd1/slide3.jpg" alt='это html'>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

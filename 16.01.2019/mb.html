@@ -1,0 +1,858 @@
+<!doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Резиновая верстка</title>
+    <style type="text/css">
+    
+    
+        @media all and (max-width: 640px) {
+        
+        #header {
+                max-width: 640px;
+                height: 97px;
+          
+            }
+            
+                    /* 1 */
+        #leftcol {
+            max-width: 102px;
+            float: left;
+            width: 20%;
+            height: 97px;
+            color: white;
+            background: #323033;
+
+        }
+        
+         /* 2 */
+    #centercol {
+            max-width: 240px;
+            float: left;
+            width: 30%;
+            height: 97px;
+            color: white;
+            background: #323033;
+            margin-left: 20px;
+        }
+
+    /* 3 */
+        #rightcol {
+            width: 50%;
+            max-width: 600px;
+            height: 97px;
+            background: #323033;
+            margin-left: 20px;
+            color: white;
+
+        }
+
+
+
+        }
+
+
+
+
+
+
+
+        @media all and (min-width: 641px) and (max-width: 1024px) {
+            header {
+                max-width: 1024px;
+                height: 97px;
+            }
+            
+                    /* 1 */
+
+        #leftcol {
+            width: 20vh;
+            height: 97px;
+            float: left;
+            color: white;
+            background: #323033;
+            margin-right: 29px;
+        }
+        
+        }
+
+
+
+        @media all and (max-width: 1200px) {
+            header {
+                max-width: 1200px;
+                height: 97px;
+
+            }
+        }
+        
+                            /* 1 */
+
+
+
+
+        @media all and (min-width: 1200px) {
+            header {
+                min-width: 1200px;
+                height: 97px;
+            }
+            
+                    /* 1 */
+
+        #leftcol {
+            width: 102px;
+            height: 97px;
+            float: left;
+            color: white;
+            background: #323033;
+            margin-right: 29px;
+        }
+
+        }
+       
+
+
+
+
+
+
+        /* 2 */
+
+        #centercol {
+            width: 240px;
+            height: 97px;
+            float: left;
+            color: white;
+            background: #323033;
+            margin-right: 29px;
+        }
+
+    
+
+
+
+        p {
+            padding: 10px;
+            /* Поля вокруг текста 
+    margin: 0;  /* Убираем отступы */
+        }
+
+        hr {
+            height: 1px;
+            width: 848px;
+            background-color: black;
+            /*border:1px solid black;*/
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+
+        #main {
+            height: 720px;
+            width: 848px;
+            margin-top: 30px;
+            position: relative;
+        }
+
+
+        #aside {
+            height: 720px;
+            width: 160px;
+        }
+
+
+
+        .sectiontop {
+            width: 160px;
+            height: 306px;
+            float: left;
+            color: white;
+            background: #323033;
+            margin-bottom: 302px;
+        }
+
+        .sectionbottom {
+            width: 160px;
+            height: 112px;
+            float: left;
+            color: white;
+            background: #323033;
+        }
+
+
+
+
+        #section {
+            width: 656px;
+            height: 720px;
+            float: left;
+            position: absolute;
+            left: 192px;
+            top: 0px;
+            /*background-color:red;*/
+        }
+
+
+
+
+        .sections:nth-of-type(1) {
+            width: 656px;
+            height: 176px;
+            float: left;
+            background-color: gray;
+            color: white;
+            margin-bottom: 22px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        .sections {
+            width: 112px;
+            height: 128px;
+            background-color: gray;
+            color: white;
+            display: inline-block;
+            /*float: left;*/
+        }
+
+
+        .sections:nth-of-type(2) {
+            position: absolute;
+            left: 136px;
+            top: 200px;
+        }
+
+        .sections:nth-of-type(3) {
+            position: absolute;
+            left: 272px;
+            top: 200px;
+        }
+
+
+        .sections:nth-of-type(4) {
+            position: absolute;
+            left: 408px;
+            top: 200px;
+        }
+
+
+        .sections:nth-of-type(5) {
+            position: absolute;
+            left: 544px;
+            top: 200px;
+        }
+
+
+        .sections:nth-of-type(6) {
+            position: absolute;
+            left: 0px;
+            top: 352px;
+        }
+
+
+
+        .sections:nth-of-type(7) {
+            position: absolute;
+            left: 136px;
+            top: 352px;
+        }
+
+        .sections:nth-of-type(8) {
+            position: absolute;
+            left: 0px;
+            top: 200px;
+        }
+
+
+        .cellleft {
+            width: 320px;
+            height: 176px;
+            color: white;
+            background: gray;
+            position: absolute;
+            top: 544px;
+        }
+
+        .cellright {
+            width: 320px;
+            height: 176px;
+            color: white;
+            background: gray;
+            position: absolute;
+            left: 336px;
+            top: 544px;
+
+        }
+
+
+
+        #footer {
+            margin-top: 30px;
+            width: 848px;
+            /* Общая ширина колонок */
+            height: 176px;
+        }
+
+
+
+        #left {
+            /* Левая колонка*/
+            width: 256px;
+            /* Ширина слоя */
+            height: 160px;
+            float: left;
+            /* Состыковка с соседним слоем */
+            color: white;
+            /* Цвет текста*/
+            background: #323033;
+            /* Цвет фона левой колонки */
+            margin-right: 32px;
+        }
+
+        #center {
+            /* Левая колонка*/
+            width: 256px;
+            /* Ширина слоя */
+            height: 160px;
+            float: left;
+            /* Состыковка с соседним слоем */
+            color: white;
+            /* Цвет текста*/
+            background: #323033;
+            /* Цвет фона левой колонки */
+            margin-right: 32px;
+        }
+
+
+
+        .right1 {
+            height: 72px;
+            /*width:272px;*/
+            background: #323033;
+            margin-left: 560px;
+            color: white;
+            margin-bottom: 15px;
+
+        }
+
+
+        .right2 {
+            height: 72px;
+            background-color: #323033;
+            margin-left: 560px;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="header">
+            <div id="leftcol">
+                <p>1</p>
+            </div>
+            <div id="centercol">
+                <p>2</p>
+            </div>
+            <div id="rightcol">
+                <p>3</p>
+            </div>
+            <hr></hr>
+        </div>
+        <div id="main">
+
+            <div id="aside">
+                <div class="sectiontop">
+                    <ul>4</ul>
+                </div>
+                <div class="sectionbottom">
+                    <p>7</p>
+                </div>
+            </div>
+            <div id="section">
+                <div class="sections">
+                    <ul>5</ul>
+                </div>
+                <div class="sections">
+                    <ul>6</ul>
+                </div>
+                <div class="sections">
+                    <ul>6</ul>
+                </div>
+                <div class="sections">
+                    <ul>6</ul>
+                </div>
+                <div class="sections">
+                    <ul>6</ul>
+                </div>
+                <div class="sections">
+                    <ul>6</ul>
+                </div>
+                <div class="sections">
+                    <ul>6</ul>
+                </div>
+                <div class="sections">
+                    <ul>6</ul>
+                </div>
+                <div class="cellleft">
+                    <ul>8</ul>
+                </div>
+                <div class="cellright">
+                    <ul>9</ul>
+                </div>
+            </div>
+            <hr></hr>
+        </div>
+        <div id="footer">
+            <div id="left">
+                <p>10</p>
+            </div>
+            <div id="center">
+                <p>11</p>
+            </div>
+            <div class="right1">
+                <p>12</p>
+            </div>
+            <div class="right2">
+                <p>13</p>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+<!doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Резиновая верстка</title>
+    <style type="text/css">
+    
+    
+        @media all and (max-width: 640px) {
+        
+        #header {
+                max-width: 640px;
+                height: 97px;
+          
+            }
+            
+                    /* 1 */
+        #leftcol {
+            max-width: 102px;
+            float: left;
+            width: 20%;
+            height: 97px;
+            color: white;
+            background: #323033;
+
+        }
+        
+         /* 2 */
+    #centercol {
+            max-width: 240px;
+            float: left;
+            width: 30%;
+            height: 97px;
+            color: white;
+            background: #323033;
+            margin-left: 20px;
+        }
+
+    /* 3 */
+        #rightcol {
+            width: 50%;
+            max-width: 600px;
+            height: 97px;
+            background: #323033;
+            margin-left: 20px;
+            color: white;
+
+        }
+
+
+
+        }
+
+
+
+
+
+
+
+        @media all and (min-width: 641px) and (max-width: 1024px) {
+            header {
+                max-width: 1024px;
+                height: 97px;
+            }
+            
+                    /* 1 */
+
+        #leftcol {
+            width: 20vh;
+            height: 97px;
+            float: left;
+            color: white;
+            background: #323033;
+            margin-right: 29px;
+        }
+        
+        }
+
+
+
+        @media all and (max-width: 1200px) {
+            header {
+                max-width: 1200px;
+                height: 97px;
+
+            }
+        }
+        
+                            /* 1 */
+
+
+
+
+        @media all and (min-width: 1200px) {
+            header {
+                min-width: 1200px;
+                height: 97px;
+            }
+            
+                    /* 1 */
+
+        #leftcol {
+            width: 102px;
+            height: 97px;
+            float: left;
+            color: white;
+            background: #323033;
+            margin-right: 29px;
+        }
+
+        }
+       
+
+
+
+
+
+
+        /* 2 */
+
+        #centercol {
+            width: 240px;
+            height: 97px;
+            float: left;
+            color: white;
+            background: #323033;
+            margin-right: 29px;
+        }
+
+    
+
+
+
+        p {
+            padding: 10px;
+            /* Поля вокруг текста 
+    margin: 0;  /* Убираем отступы */
+        }
+
+        hr {
+            height: 1px;
+            width: 848px;
+            background-color: black;
+            /*border:1px solid black;*/
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+
+        #main {
+            height: 720px;
+            width: 848px;
+            margin-top: 30px;
+            position: relative;
+        }
+
+
+        #aside {
+            height: 720px;
+            width: 160px;
+        }
+
+
+
+        .sectiontop {
+            width: 160px;
+            height: 306px;
+            float: left;
+            color: white;
+            background: #323033;
+            margin-bottom: 302px;
+        }
+
+        .sectionbottom {
+            width: 160px;
+            height: 112px;
+            float: left;
+            color: white;
+            background: #323033;
+        }
+
+
+
+
+        #section {
+            width: 656px;
+            height: 720px;
+            float: left;
+            position: absolute;
+            left: 192px;
+            top: 0px;
+            /*background-color:red;*/
+        }
+
+
+
+
+        .sections:nth-of-type(1) {
+            width: 656px;
+            height: 176px;
+            float: left;
+            background-color: gray;
+            color: white;
+            margin-bottom: 22px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        .sections {
+            width: 112px;
+            height: 128px;
+            background-color: gray;
+            color: white;
+            display: inline-block;
+            /*float: left;*/
+        }
+
+
+        .sections:nth-of-type(2) {
+            position: absolute;
+            left: 136px;
+            top: 200px;
+        }
+
+        .sections:nth-of-type(3) {
+            position: absolute;
+            left: 272px;
+            top: 200px;
+        }
+
+
+        .sections:nth-of-type(4) {
+            position: absolute;
+            left: 408px;
+            top: 200px;
+        }
+
+
+        .sections:nth-of-type(5) {
+            position: absolute;
+            left: 544px;
+            top: 200px;
+        }
+
+
+        .sections:nth-of-type(6) {
+            position: absolute;
+            left: 0px;
+            top: 352px;
+        }
+
+
+
+        .sections:nth-of-type(7) {
+            position: absolute;
+            left: 136px;
+            top: 352px;
+        }
+
+        .sections:nth-of-type(8) {
+            position: absolute;
+            left: 0px;
+            top: 200px;
+        }
+
+
+        .cellleft {
+            width: 320px;
+            height: 176px;
+            color: white;
+            background: gray;
+            position: absolute;
+            top: 544px;
+        }
+
+        .cellright {
+            width: 320px;
+            height: 176px;
+            color: white;
+            background: gray;
+            position: absolute;
+            left: 336px;
+            top: 544px;
+
+        }
+
+
+
+        #footer {
+            margin-top: 30px;
+            width: 848px;
+            /* Общая ширина колонок */
+            height: 176px;
+        }
+
+
+
+        #left {
+            /* Левая колонка*/
+            width: 256px;
+            /* Ширина слоя */
+            height: 160px;
+            float: left;
+            /* Состыковка с соседним слоем */
+            color: white;
+            /* Цвет текста*/
+            background: #323033;
+            /* Цвет фона левой колонки */
+            margin-right: 32px;
+        }
+
+        #center {
+            /* Левая колонка*/
+            width: 256px;
+            /* Ширина слоя */
+            height: 160px;
+            float: left;
+            /* Состыковка с соседним слоем */
+            color: white;
+            /* Цвет текста*/
+            background: #323033;
+            /* Цвет фона левой колонки */
+            margin-right: 32px;
+        }
+
+
+
+        .right1 {
+            height: 72px;
+            /*width:272px;*/
+            background: #323033;
+            margin-left: 560px;
+            color: white;
+            margin-bottom: 15px;
+
+        }
+
+
+        .right2 {
+            height: 72px;
+            background-color: #323033;
+            margin-left: 560px;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="header">
+            <div id="leftcol">
+                <p>1</p>
+            </div>
+            <div id="centercol">
+                <p>2</p>
+            </div>
+            <div id="rightcol">
+                <p>3</p>
+            </div>
+            <hr></hr>
+        </div>
+        <div id="main">
+
+            <div id="aside">
+                <div class="sectiontop">
+                    <ul>4</ul>
+                </div>
+                <div class="sectionbottom">
+                    <p>7</p>
+                </div>
+            </div>
+            <div id="section">
+                <div class="sections">
+                    <ul>5</ul>
+                </div>
+                <div class="sections">
+                    <ul>6</ul>
+                </div>
+                <div class="sections">
+                    <ul>6</ul>
+                </div>
+                <div class="sections">
+                    <ul>6</ul>
+                </div>
+                <div class="sections">
+                    <ul>6</ul>
+                </div>
+                <div class="sections">
+                    <ul>6</ul>
+                </div>
+                <div class="sections">
+                    <ul>6</ul>
+                </div>
+                <div class="sections">
+                    <ul>6</ul>
+                </div>
+                <div class="cellleft">
+                    <ul>8</ul>
+                </div>
+                <div class="cellright">
+                    <ul>9</ul>
+                </div>
+            </div>
+            <hr></hr>
+        </div>
+        <div id="footer">
+            <div id="left">
+                <p>10</p>
+            </div>
+            <div id="center">
+                <p>11</p>
+            </div>
+            <div class="right1">
+                <p>12</p>
+            </div>
+            <div class="right2">
+                <p>13</p>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>

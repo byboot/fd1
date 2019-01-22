@@ -1,0 +1,38 @@
+@media screen and (min-width:1025px) and (max-width:1200px) {
+            #leftcol {
+                float: left;
+                max-width: 152px;
+                width: 20%;
+            }
+            #centercol {
+                float: left;
+                max-width: 290px;
+                width: 40%;
+                margin-left: 10px;
+            }
+            #rightcol {
+                float: left;
+                max-width: 600px;
+                width: 50%;
+                margin-left: 10px;
+            }
+            #header {
+                height: 110px;
+                clear: both;
+            }
+            
+            hr {
+                height: 1px;
+                max-width: 1200px;
+                width:20%;
+                background-color: black;
+                /*float:left;*/
+                /*margin-top: 20px;*/
+                /*margin-bottom: 15px;*/
+                /*margin-left: 0px;*/
+                position:absolute;
+                top:110px;
+                
+            }
+            
+        }
