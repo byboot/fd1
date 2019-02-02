@@ -1,0 +1,215 @@
+
+<!--https://github.com/ashablyka/fd1-->
+<!--https://github.com/kseniaplehanova/fd1-->
+<!--https://github.com/YuliaBeliak/fd1-->
+
+
+<!DOCTYPE html>
+<html>
+
+ <head>
+    <meta charset="utf-8">
+    <title>
+        Clock
+    </title>
+    <style>
+    .face {
+        border: solid 1px black;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: calc(50vw - 101px);
+        top: 25vh;
+    }
+    .hand {
+        height: 95px;
+        background: red;
+        width: 2px;
+        position: absolute;
+        left: 99px;
+        top: 6px;
+        animation: rotation 60s steps(60) infinite normal both;
+    }
+    body {
+        margin: 0;
+        font-family: monospace;
+    }
+    div {
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        width: 20px;
+        height: 130px;
+        top: calc(25vh - 20px);
+        left: calc(50vw - 10px);
+    }
+    div:nth-of-type(2) {
+        transform: rotate(30deg);
+        transform-origin: 10px 121px;
+    }
+    div:nth-of-type(3) {
+        transform: rotate(60deg);
+        transform-origin: 10px 121px;
+    }
+    div:nth-of-type(4) {
+        transform: rotate(90deg);
+        transform-origin: 10px 121px;
+    }
+    div:nth-of-type(5) {
+        transform: rotate(120deg);
+        transform-origin: 10px 121px;
+    }
+    div:nth-of-type(6) {
+        transform: rotate(150deg);
+        transform-origin: 10px 121px;
+    }
+    div:nth-of-type(7) {
+        transform: rotate(180deg);
+        transform-origin: 10px 121px;
+    }
+    div:nth-of-type(8) {
+        transform: rotate(210deg);
+        transform-origin: 10px 121px;
+    }
+    div:nth-of-type(9) {
+        transform: rotate(240deg);
+        transform-origin: 10px 121px;
+    }
+    div:nth-of-type(10) {
+        transform: rotate(270deg);
+        transform-origin: 10px 121px;
+    }
+    div:nth-of-type(11) {
+        transform: rotate(300deg);
+        transform-origin: 10px 121px;
+    }
+    div:nth-of-type(12) {
+        transform: rotate(330deg);
+        transform-origin: 10px 121px;
+    }
+    @keyframes rotation {
+        from {
+            transform-origin: 0 95px;
+            transform: rotate(0deg);
+        }
+        to {
+            transform-origin: 0 95px;
+            transform: rotate(360deg);
+        }
+    }
+    p {
+        width: 200px;
+        height: 100px;
+        border: solid 1px black;
+        position: absolute;
+        top: calc(25vh + 255px);
+        left: calc(50vw - 101px);
+        margin: 0;
+        text-align: center;
+    }
+    span {
+        font-size: 5em;
+        line-height: 100px;
+        border: solid 1px black;
+    }
+    span::before {
+        content: "0";
+    }
+    span:nth-of-type(4)::before {
+        animation: seconds 10s step-end 0s infinite normal both;
+        
+    }
+    span:nth-of-type(3)::before {
+        animation: minutes 60s step-end 0s infinite normal both;
+    }
+    span:nth-of-type(2)::before {
+        animation: seconds 600s step-end 0s infinite normal both;
+    }
+    span:nth-of-type(1)::before {
+        animation: minutes 3600s step-end 0s infinite normal both;
+    }
+    @keyframes seconds {
+        0% {
+            content: "0";
+        }
+        10% {
+            content: "1";
+        }
+        20% {
+            content: "2";
+        }
+        30% {
+            content: "3";
+        }
+        40% {
+            content: "4";
+        }
+        50% {
+            content: "5";
+        }
+        60% {
+            content: "6";
+        }
+        70% {
+            content: "7";
+        }
+        80% {
+            content: "8";
+        }
+        90% {
+            content: "9";
+        }
+        100% {
+            content: "0";
+        }
+    }
+    @keyframes minutes {
+        0% {
+            content: "0";
+        }
+        16.67% {
+            content: "1";
+        }
+        33.34% {
+            content: "2";
+        }
+        50.01% {
+        }
+        66.68% {
+            content: "4";
+        }
+        83.35% {
+            content: "5";
+        }
+        100% {
+            content: "6";
+        }
+    }
+</style>
+</head>
+
+ <body>
+    <section class="face">
+        <section class="hand"></section>
+    </section>
+    <div>0 &#124</div>
+    <div>5 &#124</div>
+    <div>10 &#124</div>
+    <div>15 &#124</div>
+    <div>20 &#124</div>
+    <div>25 &#124</div>
+    <div>30 &#124</div>
+    <div>35 &#124</div>
+    <div>40 &#124</div>
+    <div>45 &#124</div>
+    <div>50 &#124</div>
+    <div>55 &#124</div>
+    <p>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </p>
+</body>
+ </html> 

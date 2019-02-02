@@ -1,0 +1,189 @@
+<!doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Выпадающее меню</title>
+
+
+    <style type="text/css">
+    
+        .clock {
+            margin: auto;
+            width: 500px;
+            height: 500px;
+            border: 20px solid green;
+            border-radius: 50%;
+            position: relative;
+        }
+         .long_line {
+            width: 120px;
+            left: calc(50% - 1px);
+            transform-origin: 2px 35px;
+        }
+         .long_line>.long_line {
+            transform: rotate(10deg);
+        }
+         .short_line {
+            width: 4px;
+            height: 10px;
+            background: black;
+        }
+         .center {
+            position: absolute;
+            top: calc(50% - 6px);
+            left: calc(50% - 6px);
+            width: 10px;
+            height: 10px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background: black;
+        }
+         @keyframes turn {
+            from {
+                transform: rotate(0deg)
+            }
+            to {
+                transform: rotate(360deg)
+            }
+        }
+         .hand {
+            margin: 36px auto;
+            width: 4px;
+            height: 150px;
+            background: red;
+            transform-origin: 2px 128px;
+            animation: turn 60s linear 0s infinite;
+        }
+         .number {
+            position: absolute;
+        }
+         .number:nth-of-type(2) {
+            top: -30px;
+            left: 140px;
+        }
+         .number:nth-of-type(3) {
+            top: 40px;
+            left: 226px;
+        }
+         .number:nth-of-type(4) {
+            top: 88px;
+            left: 260px;
+        }
+         .number:nth-of-type(5) {
+            top: 155px;
+            left: 286px;
+        }
+         .number:nth-of-type(6) {
+            top: 216px;
+            left: 264px;
+        }
+         .number:nth-of-type(7) {
+            top: 270px;
+            left: 220px;
+        }
+         .number:nth-of-type(8) {
+            top: 286px;
+            left: 154px;
+        }
+         .number:nth-of-type(9) {
+            top: 270px;
+            left: 90px;
+        }
+         .number:nth-of-type(10) {
+            top: 216px;
+            left: 40px;
+        }
+         .number:nth-of-type(11) {
+            top: 155px;
+            left: 20px;
+        }
+         .number:nth-of-type(12) {
+            top: 88px;
+            left: 42px;
+        }
+         .number:nth-of-type(13) {
+            top: 40px;
+            left: 86px;
+        }
+        .digital {
+            margin-top: 50px;
+        }
+        .digital>div {
+            position: absolute;
+            opacity: 0;
+            font-size: 60px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        
+
+       
+    </style>
+</head>
+
+ <body>
+  
+  
+  <br><br>
+  
+  
+    <div class="clock">
+        <div class="long_line">
+            <div class="long_line">
+                <div class="long_line">
+                    <div class="long_line">
+                        <div class="long_line">
+                            <div class="long_line">
+                                <div class="long_line">
+                                    <div class="long_line">
+                                        <div class="long_line">
+                                            <div class="long_line">
+                                                <div class="long_line">
+                                                    <div class="long_line">
+                                                        <div class="short_line"></div>
+                                                    </div>
+                                                    <div class="short_line"></div>
+                                                </div>
+                                                <div class="short_line"></div>
+                                            </div>
+                                            <div class="short_line"></div>
+                                        </div>
+                                        <div class="short_line"></div>
+                                    </div>
+                                    <div class="short_line"></div>
+                                </div>
+                                <div class="short_line"></div>
+                            </div>
+                            <div class="short_line"></div>
+                        </div>
+                        <div class="short_line"></div>
+                    </div>
+                    <div class="short_line"></div>
+                </div>
+                <div class="short_line"></div>
+            </div>
+            <div class="short_line"></div>
+        </div>
+        <div class="number">0</div>
+        <div class="number">5</div>
+        <div class="number">10</div>
+        <div class="number">15</div>
+        <div class="number">20</div>
+        <div class="number">25</div>
+        <div class="number">30</div>
+        <div class="number">35</div>
+        <div class="number">40</div>
+        <div class="number">45</div>
+        <div class="number">50</div>
+        <div class="number">55</div>
+        <div class="center"></div>
+        <div class="hand"></div>
+    </div>
+    
+    
+
+</body>
+
+ </html> 

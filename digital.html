@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Расстановка цифр</title>
+    <style>
+        .wrapper>div {
+            float: left;
+            width: 2em;
+            transition: 3s;
+        }
+        div:nth-child(3n+1) {
+            clear: left;
+        }
+        .wrapper:hover div:nth-child(6),
+        .wrapper:hover div:nth-child(8),
+        .wrapper:hover div:nth-child(12),
+        .wrapper:hover div:nth-child(17) {
+            margin-left: -4em;
+        }
+        .wrapper:hover div:nth-child(5),
+        .wrapper:hover div:nth-child(7),
+        .wrapper:hover div:nth-child(13) {
+            margin-left: 2em;
+        }
+        .wrapper:hover div:nth-child(10),
+        .wrapper:hover div:nth-child(16) {
+            margin-left: 4em;
+        }
+        .wrapper:hover div:nth-child(11),
+        .wrapper:hover div:nth-child(15),
+        .wrapper:hover div:nth-child(18) {
+            margin-left: -6em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+
+</html>
