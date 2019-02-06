@@ -1,0 +1,57 @@
+
+// скрипт опроса - анкеты (ДЗ №2)
+
+var sv=0;
+
+var group = {
+   fam:[],
+   name:[],
+   ot:[],
+   vozrast:[]
+ }
+
+function check (vvod)
+{
+  if (vvod==null)
+  {alert("Вы нажали отмену - значит, конец ввода"); return true;}
+ if  (vvod>=18)
+   {sv++;}
+} 
+
+
+while (true) {
+
+ if (check (
+   group.fam[group.fam.length]=prompt("Введите вашу фамилию"))===true) {break;}
+ if (check (
+   group.name[group.name.length]=prompt("Введите ваше имя"))===true) {break;}
+ if (check (
+   group.ot[group.ot.length]=prompt("Введите ваше отчество"))===true) {break;}
+ if (check (
+   group.vozrast[group.vozrast.length]=prompt("Введите ваш возраст"))===true) {break;}
+
+}
+   
+
+alert ("Количество совершеннолетних: "+sv+"\r\n"+"Количество НЕсовершеннолетних: "+(group.vozrast.length-sv));
+
+
+console.log (group);
+
+
+
+
+
+// скрипт палиндром (ДЗ №3)
+
+var s=prompt('Введите предложение, например: Аргентина манит негра');
+var ss;
+var r="";
+
+ ss=s.toLowerCase(); 
+  ss=ss.replace(/[/. ,!?;]/g, '');
+ 
+ for (var i=ss.length-1; i>=0; i--) { r=r+ss[i]; }
+
+ if (ss==r) {alert ('Строка "'+s+'" Это палиндром');} else
+   {alert ('Строка "'+s+'" НЕ ПАЛИНДРОМ!');}
