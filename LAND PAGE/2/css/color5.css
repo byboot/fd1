@@ -1,0 +1,54 @@
+.ban-btns .buy,.port_wrapper ul .active a:after,.port_wrapper ul .active a:before,
+.sub-form .singh:hover{
+	background:#6d6d6d;
+}
+.callout-content .btnn:hover{
+	background:rgba(208,131,240,.8);
+}
+.ban-btns .buy,#version5 .navbar-inverse .navbar-nav > li > a:hover,#version5 .buy-now a,.sub-form .singh:hover{
+	border-color:#fff;
+}
+.callout-content .btnn,.sorting-content .btnn:hover,
+.form form .message3-btn .submit:hover,.formm #senddd:hover,.top-form .formm #senddd,.ban-btns .buy,.sub-form .singh{
+	background:#6d6d6d;
+	border-color:#6d6d6d;
+}
+.service:hover .iconss span:after{
+	border-bottom-color:#6d6d6d;
+
+}
+
+.text-with-btn ul li:before,.port_wrapper ul .active a,
+.service:hover i,.service i{
+	color:#6d6d6d;
+}
+.service:hover .iconss span:before{
+	border-top-color:#6d6d6d;
+}
+#version5 .navbar-inverse .navbar-nav > li > a{
+	color:#fff;
+}
+#version5 .buy-now a,#version5 .buy-now a:hover{
+	color:#fff;
+}
+#version5 .buy-now a{
+	background:#17a510;
+	border-color:#17a510;
+}
+.text-with-btn .btnn{
+	border-color:#6d6d6d;
+}
+.text-with-btn .btnn:hover,.sorting-content .btnn:hover,.ban-btns .buy:hover,.sub-form .singh:hover,.top-form .formm #senddd:hover{
+    background: #5d5d5d;
+	border-color:#5d5d5d;
+}
+.port_wrapper ul li .active:after,.port_wrapper ul  li .active:before{
+	content: "";
+   background:#000!important;
+    z-index: 999;
+	
+	}
+.port_wrapper ul li .active{
+	color:#000!important;
+	
+	}	

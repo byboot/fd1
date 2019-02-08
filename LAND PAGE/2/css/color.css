@@ -1,0 +1,34 @@
+.ban-btns .buy{
+	background:#e85f70;
+}
+.ban-btns .buy:hover,.callout-content .btnn:hover{
+	background:rgba(244,135,86,.8);
+}
+.ban-btns .buy{
+	border-color:#e85f70;
+}
+.service:hover i,.text-with-btn .btnn:hover,.callout-content .btnn,.sorting-content .btnn:hover,
+.form form .message3-btn .submit:hover,.formm #senddd:hover{
+	background:#e85f70;
+	border-color:#e85f70;
+}
+.service:hover .iconss span:after{
+	border-bottom-color:#e85f70;
+
+}
+.text-with-btn ul li:before{
+	color:#e85f70;
+}
+.service:hover .iconss span:before{
+	border-top-color:#e85f70;
+}
+.port_wrapper ul li .active:after,.port_wrapper ul  li .active:before{
+	content: "";
+   background:#e85f70!important;
+    z-index: 999;
+	
+	}
+.port_wrapper ul li .active{
+	color:#e85f70!important;
+	
+	}	

@@ -1,0 +1,728 @@
+@media screen and (min-width:980px) and (max-width:1024px) {
+.navbar-inverse .navbar-nav > li > a{
+	margin-right: 20px;
+}
+.banner-tab{
+	width:auto;
+}
+.form,.video-box-content2{
+	width:auto;
+}	
+.comment-box{
+	background-size:100%;
+}
+.sub-form2 .in-type {
+	
+    margin-right: 22px;
+    width: 299px;
+}
+.form2{
+	position:relative;
+}
+.header3 .navbar-inverse .navbar-nav > li > a {
+  
+    margin-right: 40px !important;
+}
+.service3-image h4{
+	font-size:16px;
+}
+.review3{
+	width:auto;
+}
+.contact-email p:before{
+	left:22%;
+}
+.contact-phone p:before{
+	left:46%;
+}
+.our-brands .col-md-8,.title4,.pricing-plane2 .col-md-8{
+	width:100%;
+}
+.timeline-line{
+	width:730px;
+}
+.top-social4 .header3 .navbar-inverse .navbar-nav  li a{
+	margin-right:28px !important;
+}
+#topbar-version8 .header3 .navbar-inverse .navbar-nav > li > a{
+	color:#252525;
+}
+.form-client .flip-counter.default .digit, .form-client .flip-counter.default .digit .line, .form-client .flip-counter.default .digit span, .form-client .flip-counter.default .digit .hinge {
+    width: 34px !important;
+}
+#singh-uppp{
+	display:none;
+}
+}
+@media screen and (min-width:768px) and (max-width:979px){
+
+
+.header44 {
+    width: 64%;
+}
+.buy-now {
+    margin-bottom: 36px;
+    text-align: left;
+}
+.container{
+	padding-left:15px!important;
+	padding-right:15px!important;
+}
+.ban-btns .buy {
+    margin-bottom: 10px;
+   
+}
+.slider .col-sm-6{
+	width:100%;
+}
+.navbar-inverse .navbar-nav > li > a {
+    margin-right: 34px;
+}
+.form,.video-box-content2{
+	width:auto;
+}
+.header2 .navbar-inverse .navbar-nav > li > a{
+	margin-left:22px;
+}
+.comment-box{
+	background-size:100% 141px;
+	height:141px;
+}
+
+.comment-box p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+}
+.commenter-name {
+    padding-left: 50px;
+}
+
+.other-content h1 {
+    font-size: 40px;
+    line-height: 50px;
+}
+.form2{
+	position:relative;
+}
+
+.sub-form2 .in-type {
+  
+    margin-right: 22px;
+    width: 195px;
+}
+.accordion-section-title {
+    font-size: 16px;
+}
+.plan h3{
+	font-size:18px;
+}
+.price span{
+	font-size:40px;
+}
+.header3,.review3,.form3{
+	width:100%;
+	
+}
+.header3 .navbar-inverse .navbar-nav > li > a{
+	margin-right:39px !important;
+}
+.service3-main,.text3-withbtn{
+	width:100%;
+}
+.gallery-section .btnn{
+	margin-bottom:30px;
+}
+
+.detail-con {
+    padding: 0 20px;
+}
+.sub-form3 .in-type {
+   
+    width: 250px;
+}
+.contact-email p:before{
+	left:12%;
+}
+.contact-phone p:before{
+	left:27%;
+}
+.top-social4 .header3 .navbar-inverse .navbar-nav  li a{
+	margin-right:12px !important;
+}
+.thought {
+  
+    right: -48%;
+    top: -27%;
+  
+}
+.our-brands .clients-area ul li {
+    
+    padding: 0 10px;
+}
+.timeline-line{
+	width:536px;
+}
+.clients-reviews4{
+	padding-top:40px !important;
+}
+.our-brands .col-md-8,.title4,.pricing-plane2 .col-md-8{
+	width:100%;
+}
+.top-form .formm{
+	width:100%;	
+}
+.form-client .flip-counter.default .digit, .form-client .flip-counter.default .digit .line, .form-client .flip-counter.default .digit span, .form-client .flip-counter.default .digit .hinge {
+    width: 43px !important;
+}
+
+#topbar-version8 .header3 .navbar-inverse .navbar-nav > li > a{
+	color:#252525;
+}#topbar-version8 {
+	background:#fff;
+}
+.top-social4 .header3{
+	width:auto;
+}
+.top-social .navbar-inverse .navbar-nav > li > a {
+    margin-right: 12px !important;
+}
+.top-social .btnn {
+   
+    padding: 10px 22px;
+ 
+}
+.top-social .buy-now{
+	padding-left:0px;
+	    width: auto;
+}
+.top-social .header44 {
+    width: 50%;
+}
+.clients-area ul li {
+    display: inline-block;
+    padding: 0px 6px;
+}
+.clients-area ul li:nth-child(6){
+	display:none;
+}
+.service2-section .clients-area ul li {
+   
+    padding: 0 9px;
+}
+.top-social3 .navbar5-logo,.top-social3 .header3{
+	width:auto;
+}
+.top-social3 .header3 .navbar-inverse .navbar-nav > li > a {
+    margin-right: 10px !important;
+}
+.gallery{
+width:100%;
+}
+.form-client {
+   
+    padding: 20px 25px 20px 14px;
+}
+.easyPieChart{
+	height:128px;
+}
+.chartt.dark {
+   
+    display: inline-block;
+   
+    float: left;
+}
+.easyPieChart span{
+	line-height:139px !important;
+}
+.chartt.dark {
+  
+    width: 143px !important;
+}
+.chartss .col-md-2:nth-child(6){
+	display:none;
+}
+#singh-uppp{
+	display:none;
+}
+}
+@media screen  and (width:480px){
+
+
+
+}
+@media screen  and (width:380px){
+	
+}
+}
+@media screen  and (width:320px){
+
+.navbar5-logo, .address {
+   
+    width: 100% !important;
+}	
+
+}
+@media screen  and (min-width:320px) and (max-width: 767px){
+.navbar-inverse .navbar-nav > li > a:hover{
+	border:none;
+	padding:0px;
+	text-align:left;
+}
+.navbar-inverse .navbar-nav > li > a{
+	text-align:left;
+}
+.navbar-collapse{
+	border:none;
+	box-shadow:none;
+}
+.navbar-nav{
+	margin:0px;
+}
+.navbar-inverse .navbar-toggle{
+	background:#222;
+	float:left;
+	margin-bottom:20px;
+	
+}
+#navbar-collapse-1{
+	margin-bottom:20px;
+}
+.container{
+	padding-left:15px!important;
+	padding-right:15px!important;
+}
+.buy-now{
+	padding:0px;
+	text-align:left;
+	padding-bottom:20px;
+}
+.ban-btns .buy {
+    margin-bottom: 10px;
+   
+}
+.service{
+	margin-top:45px;
+}
+.sorting-content{
+	margin-bottom:20px;
+}
+.sub-form .row,.footer .row{
+	margin:0px;
+}
+.form form input{
+	margin-bottom:20px;
+}
+.form div{
+	padding:0px;
+}
+.header2 .navbar-nav{
+	float:left;
+}
+.header2  .navbar-collapse{
+	padding-left:0px;
+}
+.header2 .navbar-inverse .navbar-nav > li > a{
+	margin-left:0px;
+}
+.nav-btnn {
+    float: left;
+    margin-bottom:20px;
+}
+.comment-box{
+	background:none;
+}
+
+.sub-form2 .in-type {
+   
+    margin-bottom: 10px;
+    margin-right: 22px;
+    width: 100%;
+}
+.form2{
+	position:relative;
+}
+.service2{
+	text-align:center;
+}
+.service2-content{
+	margin-bottom:20px;
+	width: 100%;
+}
+.service-image {
+    margin: 0 auto;
+    width: 100%;
+}
+.choose-us .accordion-section-title{
+	font-size:13px;
+}
+#owl-testimonial-2 .col-md-4{
+	margin-bottom:30px;
+}
+.nav-btnn {
+	display:none;
+}
+.cbp-spmenu-right {
+    right: 0;
+}
+.text-with-btn3 .btn-image{
+	bottom:0px;
+}
+.header3 .navbar-collapse-1{
+	padding-left:0px;
+}
+.banner3-content .btnn{
+	margin-bottom:20px;
+}
+.gallery-section .btnn{
+	margin-bottom:30px;
+}
+
+.header3 .navbar-nav{
+	float:left;
+}
+.da-thumbs li a, .da-thumbs li a img,.team-image img,.sub-form3 .in-type{
+	width:100%;
+}
+.client-reviews2{
+	background-repeat:repeat;
+}
+.sub-form3 .in-type{
+	margin-bottom:10px;
+}
+.form3{
+	width:auto;
+}
+.contact-email,.contact-phone,.contact-add{
+	text-align:left;
+	margin-bottom:20px;
+}
+.contact-email p:before,.contact-phone p:before{
+	left:0;
+}
+.contact-add{
+	padding-left:15px;
+}
+.footer-copy{
+	padding-left:15px;
+}
+.footer-copy .fot-social{
+	float:left;
+	margin-top:20px;
+}
+.top-social4 .header3 .navbar-inverse .navbar-nav > li > a{
+	padding:0px 3px;
+	margin-bottom:8px;
+}
+.top-social4 #navbar-collapse-1{
+	padding-left:0px;
+}
+.banner4-content .btnn{
+	margin-bottom:20px;
+}
+.tab-inner-slider{
+	width:80%;
+}
+.tab-slider{
+	width:80%;
+}
+.tab-slider {
+    background-size: 100% 236px;
+    height: 236px;
+	padding-top: 14px;
+}
+.tab-inner-sliderr{
+	padding: 11px 34px;
+    width: auto;
+	height:auto;
+}
+.tab-inner-sliderr .wistia_embed {
+    display: inline-block;
+    height: 200px !important;
+    width: auto !important;
+}
+.tab-inner-slider{
+	padding-top:0px;
+}
+#owl-testimonial-2 {
+    padding-bottom: 0px;
+}
+.tab-slider .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: 208px;
+}
+#orange .pin{
+	
+	left:48%;
+}
+#green .pin{
+	
+	left:48%;
+}
+#yello .pin{
+	
+	right:52%;
+}
+.service4,.tabber-info,.timeline .col-md-3 p,.fun-facts h5{
+	margin-bottom:30px;
+}
+.timeline-line{
+	display:none;
+}
+.plane4-details .col-md-3{
+	margin-bottom:150px !important;
+	}
+.plane4-details .col-md-3:last-child{
+	margin-bottom:0px!important;
+	}
+.chart-text{
+	padding-top:50px;
+}	
+.navbar5-logo{
+	padding-left:0px;
+
+}
+.subscribe3 h5{
+	font-size:29px;
+	line-height:29px;
+}
+.sub-form3 form .message3-btn .submit,.sub-form2 form .message3-btn .submit{
+	width:100%;
+}
+.zoomer #mlens_wrapper_0{
+	width:100%;
+
+}
+.skill .name{
+	width:auto;
+}
+.banner3-content h1, .ban-text h1 {
+    font-size: 42px;
+    line-height: 48px;
+}
+.other-content h1 {
+    font-size: 39px;
+    line-height: 43px;
+}
+.clients-area{
+	text-align:center;
+}
+.clients-area li{
+	margin-bottom:20px;
+}
+.banner4-content h1{
+	font-size:45px;
+}
+.our-brands h1{
+	font-size:30px;
+}
+.thought{
+	display:none;
+}
+.slider .btnn{
+	padding:10px 22px;
+}
+.navbar5-logo{
+	text-align:center;
+}
+.navbar5-logo img{
+	width:150px;
+	
+}
+.top-social .buy-now{
+	position:absolute;right:15px;
+	
+	width:151px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	text-align:right;
+}
+.top-social{
+	padding-top:10px;
+}
+.header2{
+	margin-top:0px;
+}
+.top-social4{
+	background:#fff;
+}
+.top-social4 .header3{
+	margin-top:0px !important;
+	padding-top:0px !important;
+}
+#client-reviews2{
+	background-repeat:repeat;
+}
+.experience-version8{
+	background-repeat:repeat !important;
+}
+.open-com1,.open-com2{
+	display:none !important;
+}
+.top-social .navbar5-logo{
+	display:none !important;
+}
+.top-social .navbar5-mlogo{
+	display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+.header44{
+	margin-top:0px;
+}
+.buy-now .btnn{
+	padding:0px;
+	border:none;
+	margin-top:14px;
+}
+
+.top-social2 .navbar5-logo{
+	display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+	margin-top:8px;
+}
+.top-social2{
+	padding-top:12px;
+}
+.top-social3 .navbar5-logo{
+	display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+	margin-top:8px;
+}
+.top-social3{
+	padding-top:12px;
+}
+.header3{
+	margin-top:0px;
+}
+.top-social4 .navbar5-logo{
+	display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+	margin-top:8px;
+}
+.top-social4{
+	padding-top:12px;
+}
+.com1,.com2,.com3{
+	display:none;
+}
+.form-client .flip-counter.default .digit, .form-client .flip-counter.default .digit .line, .form-client .flip-counter.default .digit span, .form-client .flip-counter.default .digit .hinge {
+    width: 42px !important;
+}
+.flip-counter.default .digit,.flip-counter.default .digit .line,.flip-counter.default .digit span,.flip-counter.default .digit .hinge {
+    width: 26px !important;
+}
+#topbar-version8{
+	background:none;
+}
+#topbar-version8 .navbar-inverse .navbar-nav > li > a{
+	margin-right:0px !important;
+	}
+	
+.easyPieChart span{
+	line-height:143px !important;
+}	
+.form-bottom-icon span{
+	margin:0px;
+}
+#singh-uppp{
+	display:none;
+}
+.ban-btns .buy,.banner-tab,.banner2  img,.comment-box,.commenter-name{
+	display:none;
+}
+.ban-btns{
+	margin-bottom:20px;
+}
+.slider {
+   
+    padding-bottom: 115px;
+}
+.other-content h3 {
+    
+    font-size: 26px;
+  
+}
+.plan{
+	margin-bottom:20px;
+	}	
+.success-message a {
+  
+    padding: 10px;
+}	
+.text-with-btn3 .btn-image {
+   
+    margin: 40px 0;
+}	
+.reviews4 {
+	padding-top:0px;
+	padding-bottom:30px;
+}
+.reviews4 .col-md-5{
+	display:none;
+	
+}
+#version5 .buy-now a {
+   
+    margin-top: 8px;
+    padding: 5px 10px;
+}
+.banner3-content h1, .ban-text h1{
+	text-align:center;
+}	
+.intro-copy {
+    position: relative;
+    top: 20%;
+    z-index: 1;
+}
+.text-with-btn .btnn,.plan2  {
+   
+    margin-bottom: 20px;
+}
+.text-with-btn a{
+	text-align:center;
+}
+.text-with-btn,.footer{
+	text-align:center;
+}
+.video-version5{
+	padding-top:0px !important;
+}
+.fot-social{
+	float:none;
+	margin-top:20px;
+}
+.copy{
+	float:none;
+	
+}
+#content-version7{
+	padding:100px 0px;
+}
+#client-version7 .col-md-4{
+	display:none;
+}
+#client-version7 .client-reviews2 {
+    padding-bottom: 20px;
+    padding-top: 0;
+}
+#wistia_13.thumb_container{
+	width:100% !important;
+	}
+.form-bottom-icon span{
+	font-size:11px;
+}	
+
+}
